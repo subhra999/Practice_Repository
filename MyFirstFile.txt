@@ -4,4 +4,6 @@ I know the following commands
   ii)git add
   iii)git commit
   iv)git push
+  v)git push
+  vi)git merge
   
