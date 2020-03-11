@@ -6,4 +6,5 @@ I know the following commands
   iv)git push
   v)git push
   vi)git merge
-  
+ 
+ Merge this branch with the master branch
