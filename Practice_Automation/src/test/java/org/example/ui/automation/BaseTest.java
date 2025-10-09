@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -23,9 +24,15 @@ public class BaseTest {
     @BeforeMethod
     public void setUp(){
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        //chromeOptions.addArguments("--headless=new");
+        chromeOptions.addArguments("start-maximized");
+        chromeOptions.addArguments("--incognito");
+        chromeOptions.addArguments("--disable-notifications");
+        chromeOptions.addArguments("--ignore-certificate-errors");
+        driver = new ChromeDriver(chromeOptions);
         driver.get("https://www.flipkart.com/"); //Read from config file
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
