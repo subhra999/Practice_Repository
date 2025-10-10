@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/subhr/IdeaProjects/Practice_Repository/Practice_Automation">
+        <classes>
+            <class name="org.example.api.automation.OpenWeather">
+                <methods>
+                    <include name="display"/>
+                </methods>
+            </class>
+            <class name="org.example.ui.automation.SearchForLaptop">
+                <methods>
+                    <include name="checkForItemsUsingMenu"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

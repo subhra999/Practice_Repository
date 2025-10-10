@@ -5,20 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74444444-56f2-4227-a01c-7d0f7d01e09e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/api/automation/OpenWeather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/ui/automation/utility/TestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ui/automation/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ui/automation/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ui/automation/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ui/automation/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ui/automation/SearchForLaptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ui/automation/SearchForLaptop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="33oiv59FgVELU9tsLb4PTm0b4wz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,12 +49,63 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "TestNG.BaseTest.checkForLaptops.executor": "Run",
+    "TestNG.BaseTest.validate.executor": "Run",
     "TestNG.OpenWeather.display.executor": "Run",
-    "git-widget-placeholder": "master"
+    "TestNG.SearchForLaptop.checkForItemsUsingMenu.executor": "Run",
+    "TestNG.SearchForLaptop.checkForLaptops.executor": "Run",
+    "git-widget-placeholder": "feature/Subhrakant"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.api.automation" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="f_31z7R_" />
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.SearchForLaptop.checkForItemsUsingMenu">
+    <configuration name="BaseTest.checkForLaptops" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Practice_Automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.ui.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.ui.automation" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ui.automation.BaseTest" />
+      <option name="METHOD_NAME" value="checkForLaptops" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaseTest.validate" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Practice_Automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.ui.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.ui.automation" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ui.automation.BaseTest" />
+      <option name="METHOD_NAME" value="validate" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OpenWeather.display" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Practice_Automation" />
       <extension name="coverage">
@@ -53,9 +124,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SearchForLaptop.checkForItemsUsingMenu" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Practice_Automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.ui.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.ui.automation" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ui.automation.SearchForLaptop" />
+      <option name="METHOD_NAME" value="checkForItemsUsingMenu" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchForLaptop.checkForLaptops" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Practice_Automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.ui.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.ui.automation" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ui.automation.SearchForLaptop" />
+      <option name="METHOD_NAME" value="checkForLaptops" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SearchForLaptop.checkForItemsUsingMenu" />
+        <item itemvalue="TestNG.SearchForLaptop.checkForLaptops" />
         <item itemvalue="TestNG.OpenWeather.display" />
+        <item itemvalue="TestNG.BaseTest.validate" />
+        <item itemvalue="TestNG.BaseTest.checkForLaptops" />
       </list>
     </recent_temporary>
   </component>
