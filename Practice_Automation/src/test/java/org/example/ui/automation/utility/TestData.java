@@ -6,7 +6,8 @@ public class TestData {
 
     @DataProvider(name = "data")
     public String[][] menuData(){
-        String[][] inputDetails = {{"Electronics"},{"Home & Furniture"}};
+        //String[][] inputDetails = {{"Electronics"},{"Home & Furniture"}};
+        String[][] inputDetails = {{"Electronics"}};
         return inputDetails;
     }
 }

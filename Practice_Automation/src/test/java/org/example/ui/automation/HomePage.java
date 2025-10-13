@@ -21,7 +21,7 @@ public class HomePage {
     List<WebElement> allLinks;
 
     //WebElements of Electronics Menu
-    @FindBy(css="div[aria-label='Electronics']")
+    @FindBy(css="a[aria-label='Electronics']")
     WebElement menuElectronics;
 
     @FindBy(xpath = "//div[@class='_16rZTH']/object/a[text()='Laptop and Desktop']")
@@ -30,7 +30,12 @@ public class HomePage {
     @FindBy(xpath="//div[@class='_31z7R_']/object/a[text()='Laptops']")
     WebElement itemLaptops;
 
-    //WebElements of Home&Furnitures Menu
+    @FindBy(css="img[class='xTaogf _3iTqAS']")
+    List<WebElement> saleImages;
+
+    @FindBy(css="div.mt4CeI")
+    List<WebElement> eleTopElements;
+    /*//WebElements of Home&Furnitures Menu
     @FindBy(css="div[aria-label='Home & Furniture']")
     WebElement menuHomeNFurnitures;
 
@@ -38,7 +43,7 @@ public class HomePage {
     WebElement subMenuToolsnUtility;
 
     @FindBy(xpath="//div[@class='_31z7R_']/object/a[text()='Hand tools']")
-    WebElement itemHandTools;
+    WebElement itemHandTools;*/
 
     public HomePage(WebDriver driver){
         this.driver = driver;
@@ -58,17 +63,31 @@ public class HomePage {
                 navigateToSearchItemPage(menuElectronics,subMenuLaptopsDesktops,itemLaptops);
                 break;
 
-            case "Home & Furniture":
+            /*case "Home & Furniture":
                 navigateToSearchItemPage(menuHomeNFurnitures,subMenuToolsnUtility,itemHandTools);
-                break;
+                break;*/
         }
     }
 
     public void navigateToSearchItemPage(WebElement mainMenu,WebElement subMenu,WebElement item){
         Actions actions = new Actions(driver);
         wait.until(ExpectedConditions.elementToBeClickable(mainMenu));
-        actions.moveToElement(mainMenu).perform();
+        mainMenu.click();
+        /*actions.moveToElement(mainMenu).perform();
         actions.moveToElement(subMenu).perform();
-        item.click();
+        item.click();*/
+    }
+
+    public void checkImageAndClick(){
+        for(WebElement img : saleImages) {
+            if (img.isDisplayed()) {
+                img.click();
+                break;
+            }
+        }
+        wait.until(ExpectedConditions.visibilityOfAllElements(eleTopElements));
+        for(WebElement ele : eleTopElements){
+            System.out.println(ele.getText());
+        }
     }
 }

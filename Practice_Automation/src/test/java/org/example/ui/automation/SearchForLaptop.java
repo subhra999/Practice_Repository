@@ -24,5 +24,8 @@ public class SearchForLaptop extends BaseTest{
         /*Search for the item in the HomePage*/
         homePage.searchForTheItem(testData);
         System.out.println("The title of the item page is " + driver.getTitle());
+        homePage.checkImageAndClick();
+
+        
     }
 }
